@@ -32,7 +32,7 @@ export class AuthService {
       password: hashedPassword,
       firstName: dto.firstName,
       lastName: dto.lastName,
-      EnterpriseName: dto.EnterpriseName,
+      enterpriseName: dto.EnterpriseName,
     });
 
     // Génération du token
@@ -46,7 +46,7 @@ export class AuthService {
         email: user.email,
         firstName: user.firstName,
         lastName: user.lastName,
-        EnterpriseName: user.EnterpriseName,
+        EnterpriseName: user.enterpriseName,
       },
     };
   }
@@ -74,7 +74,7 @@ export class AuthService {
         email: user.email,
         firstName: user.firstName,
         lastName: user.lastName,
-        EnterpriseName: user.EnterpriseName,
+        enterpriseName: user.enterpriseName,
       },
     };
   }

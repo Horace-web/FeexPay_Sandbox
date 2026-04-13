@@ -4,20 +4,20 @@ import { ApiProperty } from '@nestjs/swagger';
 export class RegisterDto {
   @ApiProperty({ example: 'horace@feexpay.com' })
   @IsEmail()
-  email: string;
+  email!: string;
 
   @ApiProperty({ example: 'motdepasse123', minLength: 6 })
   @IsString()
   @MinLength(6)
-  password: string;
+  password!: string;
 
   @ApiProperty({ example: 'Horace' })
   @IsString()
-  firstName: string;
+  firstName!: string;
 
   @ApiProperty({ example: 'OAO' })
   @IsString()
-  lastName: string;
+  lastName!: string;
 
   @ApiProperty({ example: 'SeedSarl', required: false })
   @IsString()
