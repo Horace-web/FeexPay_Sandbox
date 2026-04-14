@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* === CHARTE FEEXPAY === */
+
+  /* Couleurs principales */
+  --color-primary:       #112C56;  /* Bleu Nuit — logo, titres */
+  --color-secondary:     #1E40AF;  /* Bleu Électrique — boutons, liens */
+
+  /* Statuts */
+  --color-success:       #10B981;  /* Vert — Succès / Payé */
+  --color-error:         #EF4444;  /* Rouge — Échec / Annulé */
+  --color-warning:       #F59E0B;  /* Orange — En attente */
+
+  /* UI */
+  --color-bg:            #F9FAFB;  /* Gris clair — fond */
+  --color-text-muted:    #6B7280;  /* Gris foncé — textes secondaires */
+  --color-white:         #FFFFFF;
+
+  /* Typographie */
+  --font-family:         'Inter', sans-serif;
+
+  /* Espacements */
+  --radius-sm:           6px;
+  --radius-md:           12px;
+  --radius-lg:           24px;
+
+  /* Ombres */
+  --shadow-card:         0 4px 20px rgba(17, 44, 86, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
