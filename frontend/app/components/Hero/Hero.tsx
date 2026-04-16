@@ -1,7 +1,10 @@
+"use client";
 import React from 'react';
 import styles from './Hero.module.css';
+import { useRouter } from "next/navigation";
 
 const Hero: React.FC = () => {
+  const router = useRouter();
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -19,7 +22,7 @@ const Hero: React.FC = () => {
             <span className={styles.bold}>rapide</span> et <span className={styles.bold}>sécurisée</span>
           </h1>
 
-          <button className={styles.btnCta}>
+          <button className={styles.btnCta} onClick={() => router.push("/signup")}>
             Démarrer
             <div className={styles.iconBox}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">

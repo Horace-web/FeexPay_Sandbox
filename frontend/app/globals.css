@@ -40,3 +40,24 @@ body {
   background-color: var(--color-bg);
   color: var(--color-primary);
 }
+
+
+.input-field {
+  width: 100%;
+  padding-top: 1.25rem;    /* py-5 */
+  padding-bottom: 1.25rem; /* py-5 */
+  padding-left: 4rem;      /* pl-16 ->
+  padding-right: 1.5rem;   /* pr-6 */
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;     /* rounded-2xl */
+  outline: none;
+  transition: all 0.2s;
+  font-size: 12px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-field:focus {
+  border-color: #ff5a00;
+  box-shadow: 0 0 0 1px #ff5a00;
+}
